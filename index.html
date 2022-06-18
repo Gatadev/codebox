@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Code box</title>
+
+    <script src="codemirror/lib/codemirror.js"></script>
+    <link href="codemirror/lib/codemirror.css" rel="stylesheet"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/addon/edit/closetag.js"></script>
+    <link href="codemirror/theme/dracula.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <h1>Caja de codigo</h1>
+
+    <p class="subtitulo">Colocando los colores manualmente poniendole <b>class</b> a los <b>span</b>.</p>
+
+    <div class="contenedor-codigo">
+
+        
+        <code>
+
+         <span class="Uno">.contenedor</span> {<br>
+            <span class="Dos">&nbsp;&nbsp;padding:</span> <span class="Tres">20px</span>;<br>
+            <span class="Dos">&nbsp;&nbsp;border-radius:</span> <span class="Tres">4px</span>;<br>
+            <span class="Dos">&nbsp;&nbsp;max-width:</span> <span class="Tres">400px</span>;<br>
+            <span class="Dos">&nbsp;&nbsp;background-color:</span> <span class="Cuatro">#282c34</span>;<br>
+         }
+        </code>
+
+
+    </div>
+
+    <p class="subtitulo">Ahora con ayuda de <b>CodeMirror</b>.</p>
+
+    <textarea id="editor">
+<div class="contenedor-codigo">
+    <code>
+        <span class="Uno">.contenedor</span> {<br>
+        <span class="Dos">&nbsp;&nbsp;padding:</span> <span class="Tres">20px</span>;<br>
+        <span class="Dos">&nbsp;&nbsp;border-radius:</span> <span class="Tres">4px</span>;<br>
+        <span class="Dos">&nbsp;&nbsp;max-width:</span> <span class="Tres">400px</span>;<br>
+        <span class="Dos">&nbsp;&nbsp;background-color:</span> <span class="Cuatro">#282c34</span>;<br>}
+    </code>
+</div></textarea>
+
+<script>
+
+var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+    mode: "xml",
+    theme: "dracula",
+    lineNumbers: true,
+    autoCloseTags: true,
+    readOnly: true
+});
+editor.setSize("1000px", "auto");
+
+
+</script>  
+
+</body>
+
+</html>

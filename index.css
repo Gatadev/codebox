@@ -1,0 +1,41 @@
+
+body {
+    margin: 50px;
+    padding: 0;
+    background-color: #1d1d1d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.subtitulo {
+    margin-top: 40px;
+}
+
+
+.contenedor-codigo {
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 400px;
+    background-color: #282a36;
+}
+
+.contenedor-codigo code {
+    word-wrap: break-word;
+    font-family: monospace;
+}
+
+.contenedor-codigo code .Uno {
+    color: rgb(255, 190, 92);
+}
+
+.contenedor-codigo code .Dos {
+    color: rgb(93, 217, 255);
+}
+
+.contenedor-codigo code .Tres {
+    color: rgb(168, 255, 128);
+}
+
+.contenedor-codigo code .Cuatro {
+    color: rgb(255, 142, 49);
+}
