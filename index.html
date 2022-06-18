@@ -11,11 +11,12 @@
     <title>Code box</title>
 
     <script src="codemirror/lib/codemirror.js"></script>
-    <link href="codemirror/lib/codemirror.css" rel="stylesheet"></script>
+    <link href="codemirror/lib/codemirror.css" rel="stylesheet">
+    </script>
     <script src="codemirror/mode/xml/xml.js"></script>
     <script src="codemirror/addon/edit/closetag.js"></script>
     <link href="codemirror/theme/dracula.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 
     <div class="contenedor-codigo">
 
-        
+
         <code>
 
          <span class="Uno">.contenedor</span> {<br>
@@ -53,19 +54,19 @@
     </code>
 </div></textarea>
 
-<script>
+    <script>
 
-var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-    mode: "xml",
-    theme: "dracula",
-    lineNumbers: false,
-    autoCloseTags: true,
-    readOnly: false
-});
-editor.setSize("700px", "auto");
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+            mode: "xml",
+            theme: "dracula",
+            lineNumbers: false,
+            autoCloseTags: true,
+            readOnly: false
+        });
+        editor.setSize("700px", "auto");
 
 
-</script>  
+    </script>
 
 </body>
 
